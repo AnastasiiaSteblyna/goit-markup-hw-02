@@ -1,12 +1,129 @@
-:root {
-    --main-bg-color: #ffffff;
-    --second-bg-color: #F5F4FA;
-    --main-text-color: #212121;
-    --second-text-color: #757575;
-    --accent-color: #2196F3;
-    --contacts-footer: rgba(255, 255, 255, 0.6);
-}
+/* Общие настройки стилизации */
+    
+    :root {
+        --main-bg-color: #ffffff;
+        --second-bg-color: #F5F4FA;
+        --main-text-color: #212121;
+        --second-text-color: #757575;
+        --accent-color: #2196F3;
+        --contacts-footer: rgba(255, 255, 255, 0.6);
+    }
 
-/* top logo #000000 */
-/* footer logo #ffffff */
+    body { background-color: var(--main-bg-color);
+    }
 
+    a { text-decoration: none;
+    }
+
+    li { list-style:none;
+    }
+    
+    .nav-list:hover,
+    .nav-list:focus,
+    .contacts-top:hover,
+    .contacts-top:focus { color: var(--accent-color);
+        cursor: pointer;
+    }
+
+/* Header menu */
+
+    /* Logo */
+    .logo {
+        color: var(--accent-color);
+    }
+    .logo-top {
+        color: #000000;
+    }
+
+    /* Navigation */
+    .nav-list {
+        color: var(--main-text-color);
+
+    }
+
+    .contacts-top {
+        color: var(--second-text-color);
+    }
+
+/* Main content */
+    /* Hat */
+
+    .hat {
+        background-color: #2F303A;
+    }
+
+    .hat-title {
+        color: var(--main-bg-color);
+    }
+
+    .hat-button {
+        background-color: var(--accent-color);
+        color: var(--main-bg-color);
+        cursor: pointer;
+    }
+
+    .hat-button:active {
+        background-color: var(--second-bg-color);
+        color: var(--main-text-color)
+    }
+    
+    /* Descriptions section */
+
+    .descriptions {
+
+    }
+
+    .hidden-title {}
+
+    .description-title {
+        color: var(--main-text-color);
+    }
+    
+    .description {
+        color: var(--second-text-color);
+    }
+    .description-box {}
+
+    /* Examples */
+
+    .examples {}
+
+    .examples-title {
+        color: var(--main-text-color);
+    }
+
+    .example {}
+
+    /* Team */
+
+    .team {
+        background-color: var(--second-bg-color);
+    }
+    
+    .team-title {
+        color: var(--main-text-color)
+    }
+    .team-list {}
+    .team-li {}
+    .team-li-name {
+        color: var(--main-text-color);
+    }
+    .team-li-text {
+        color: var(--second-text-color);
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #2F303A
+    }
+    .logo-foot {
+        color: #ffffff;
+    }
+
+    .contacts-foot {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .address-foot {
+        color: #ffffff;
+    }
